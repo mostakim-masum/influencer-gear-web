@@ -1,0 +1,122 @@
+/* main style */
+.asap-sharp{
+  font-family: "Asap Sharp", sans-serif;
+  font-optical-sizing: auto;
+}
+/* shear style */
+:root{
+  --primary-color: #3A3A3A;
+
+}
+.heaid{
+  display: none;
+}
+
+.btn{
+  color: #FFFFFF;
+  background-color: #E02C6D;
+  padding: 10px 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 41px;
+}
+
+/* nav bar style */
+nav{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  align-items: center;
+  margin:87px 120px 0 120px;
+
+}
+.menu-logo{
+  display: none;
+}
+nav h2{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+.menu{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 34px;
+  list-style: none;
+  
+}
+nav a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 120px;
+  margin-top: 80px;
+}
+.banner-info{
+  max-width: 582px;
+  margin: 74px 133px 70px 0;
+}
+.banner-title{
+  font-size: 3.25rem;
+  color: var(--primary-color);
+  margin-block: 16px;
+}
+.banner-info p{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  max-width: 450px;
+  padding-bottom: 16px;
+}
+.banner-image img{
+  width: 100%;
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  
+}
+
+
+/* mobile screen style */
+@media screen and (max-width: 576px) {
+
+  .hide-item{
+    display: none;
+  }
+  nav{
+    
+    grid-template-columns: repeat(3 , auto);
+    justify-content: space-between;
+    margin: 35px 16px 0 16px;
+
+  }
+  nav h2{
+    font-size: 1rem;
+  }
+  .menu-logo{
+    display: block;
+    
+  }
+  .menu{
+    display: contents;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .banner-info{
+    margin: 20px;
+    text-align: center;
+  }
+  .banner-title{
+    font-size: 1.75rem;
+  }
+  .banner-image img{
+    width: 70%;
+    margin-inline: auto;
+    display: block;
+}
