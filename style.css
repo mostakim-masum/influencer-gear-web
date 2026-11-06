@@ -1,4 +1,9 @@
 /* main style */
+body{
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+}
 .asap-sharp{
   font-family: "Asap Sharp", sans-serif;
   font-optical-sizing: auto;
@@ -25,7 +30,6 @@
 nav{
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
-  align-items: center;
   margin:87px 120px 0 120px;
 
 }
@@ -53,6 +57,7 @@ nav a{
   justify-content: space-between;
   margin-inline: 120px;
   margin-top: 80px;
+  padding-bottom: 50px;
 }
 .banner-info{
   max-width: 582px;
@@ -75,9 +80,60 @@ nav a{
   background-image: url(./images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-
-  
 }
+
+.e-commerce-link{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid #3a3a3a40;
+  border-left: none;
+  border-right: none;
+}
+.e-commerce-link img{
+  padding: 40px;
+}
+
+/* product-container style */
+.product-container {
+  max-width: 1662px;
+  margin-top: 100px;
+
+}
+.container-taitel{
+  text-align: center;
+  font-size:1.75rem ;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(3 , auto);
+  gap: 30px;
+}
+.product-card{
+  height: 476px;
+  width: 329px;
+  box-shadow: 3px 3px 9px 3px #333;
+  border-radius: 5px;
+  padding: 15px;
+}
+.product-card img{
+  width: 100%;
+}
+.product-card h5{
+  font-size:1.75rem ;
+  font-weight: 500;
+  color: #18191F;
+  margin-block: 16px;
+}
+.product-card h6{
+  font-size:1.5rem ;
+  font-weight: 400;
+  color: #18191F;
+  margin-block: 16px;
+}
+
 
 
 /* mobile screen style */
@@ -120,3 +176,11 @@ nav a{
     margin-inline: auto;
     display: block;
 }
+.e-commerce-link{
+  border: none;
+  flex-wrap: wrap;
+}
+.product-list{
+  grid-template-columns: auto;
+}
+    }
